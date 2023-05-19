@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biglietto Treno</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./script/script.js"></script>
-</head>
-<body>
-    <h1>CALCOLA IL PREZZO DEL TUO BUIGLIETTO</h1>
-    <p>Nome e Cognome</p>
-    <input type="number" id="eta">
-    <p>Km da percorrere</p>
-    <input type="number" id="km_tratta">
-    <p>Fascia di età</p>
-    <form name='form'  method='GET'>
-        <select name='fascoa_eta'>
-            <option value='A'>Minorenne</option>
-            <option value='B'>Adulto</option>
-            <option value='C'>Anziano</option>
-        </select>
-    </form>
-</body>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script defer src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Form Biglietto del Treno</title>
+    </head>
+    <body>
+        <main>
+            <h1>CALCOLA IL PREZZO DEL TUO Biglietto</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        Inserisci i km da percorrere: <input type="text" name="km_travel" id="km_travel"><br>
+                        Inserisci l'età del passeggero: <input type="text" name="age_passenger" id="age_passenger" value=""><br><br>
+                        <button id="submit">Genera</button><br><br>
+                        <span>Prezzo Biglietto </span><span id="price_tiket"></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+   
+    </body>
 </html>
